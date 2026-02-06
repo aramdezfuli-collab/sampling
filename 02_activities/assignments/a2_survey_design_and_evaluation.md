@@ -40,37 +40,267 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `1`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+The purpose of this survey is to understand the reasons behind the high turnover among entry- and lower-level employees and identify changes that could improve employee satisfaction and retention. The survey will also provide measurable indicators that can be tracked over time through repeated annual surveys.
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+Target population:
+All employees of the company, with a focus on entry- and lower-level positions where turnover is highest.
+
+Sampling frame:
+The company’s internal employee email directory, which includes all active employees.
+
+Sampling unit:
+Each individual employee selected to receive the survey.
+
+Observational unit:
+Each completed survey response from an employee.
+
+Sampling strategy:
+A stratified random sampling approach will be used. Employees will first be grouped into strata based on organization (department), and then by geographic location if needed. A random sample will be selected from each stratum to ensure representation across the organization.
+The survey will be distributed through a secure third-party platform to ensure anonymity and encourage honest responses.
+
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. Which department or function do you work in? 
+        [ ] R&D 
+        [ ] Marketing, Sales, Product Maangement
+        [ ] Finance, Administration, HR
+        [ ] Manufacturing
+        [ ] Supply Chain & Logistics
+        [ ] Others (Please Specify): [text response]
+
+2. What is your job title? 
+        [text reponse]
+
+3. What is your job level? 
+        [ ] Level 2-4
+        [ ] Level 5-7
+        [ ] Level 8-9
+        [ ] Level 10+
+
+4. How long have you worked at the company? 
+        [ ] Less than 1 year
+        [ ] 1-3 years
+        [ ] 4-6 years
+        [ ] 7-9 years
+        [ ] 10+ years
+
+5. How likely would are you to recommend this company as a good place to work?
+        (1 = Very unlikely, 5 = Very likely)
+        [ ] 1
+        [ ] 2
+        [ ] 3
+        [ ] 4
+        [ ] 5
+
+6. What factors most influence your answer above? (Select all that apply) 
+        [ ] Company repuation
+        [ ] Compensation & benefits
+        [ ] Career growth opportunies
+        [ ] Positive work environment
+        [ ] Work-life balance
+        [ ] Others (Please Specify): [text response]
+
+7. How often do you think about leaving the company?
+        [ ] Rarely or never
+        [ ] About once a year
+        [ ] Every few months
+        [ ] Every week and more often
+
+8. What would be your main reasons for leaving? (Select all that apply)  
+        [ ] Compensation & benefits
+        [ ] Limited growth opportunies
+        [ ] Work environment or Culture
+        [ ] Work load or stress        
+        [ ] Leadership or management
+        [ ] Other (please specify) [text response]
+
+9. How would you rate leadership’s willingness to listen to and act on employee feedback?
+        (1 = Very poor, 5 = Excellent)
+        [ ] 1 (least likely)
+        [ ] 2
+        [ ] 3
+        [ ] 4
+        [ ] 5 (most likely)
+
+10. Please share any additional comments or suggestions
+        [text reponse]
 ```
 
 ## Part B - Survey Evaluation:
 
 Identify and describe survey features:
 
+
+
+
+
+
 ```
+Objective:
+0. The two primary objectives of the General Social Survey (GSS) are:
+        - To gather data on social trends to monitor changes in the living conditions and well-being of Canadians over time.
+        - To provide information on specific social policy issues of current or emerging interest.
+
+
+Features:
+
+1. Sample type: 
+        The survey is a probability sample survey with a cross-sectional design, using a structured questionnaire administered to selected respondents.
+
+2. Sample size: 
+        Initial field sample: approximately 50,000 units.
+
+        About 40,000 invitation letters were sent to selected households for the electronic questionnaire.
+
+        Expected number of completed questionnaires: approximately 24,000.
+
+3. Target population: 
+        The target population includes all persons 15 years of age and older living in the ten provinces of Canada. It excludes full-time (residing for more than six months) residents of institutions.
+
+4. Sampling frame
+
+        The survey used a combined telephone and dwelling frame, including:
+        - Landline and cellular telephone numbers from the Census and administrative sources
+        - Statistics Canada dwelling frame
+
+        Records consisted of one or more telephone numbers linked to an address when possible.
+
+        Sampling characteristics:
+                - Stratified probability sampling design
+                - Stratification at the province/CMA (Census Metropolitan Area) level
+                - One randomly selected household member aged 15+
+                - No proxy responses permitted
+
+        Special design feature:
+                - Rejective sampling was used to manage volunteer prevalence.
+                - All identified volunteers completed a long interview.
+                - Non-volunteers were randomly assigned to either a long or short interview.
+
+
+5. Survey mode(s) 
+        Data were collected using:
+                - Electronic self-administered questionnaire (online)
+                - Computer-Assisted Telephone Interviewing (CATI)
+
+        The questionnaire was developed through consultations and qualitative testing conducted by Statistics Canada’s Questionnaire Design Resource Centre
+
+
+6. Timeline
+        Data collection priod: 2018-09-04 to 2018-12-28
+
+7. Response rate: 
+        The overall response rate is 41.9%.
+
+8. Weights
+
+        Survey weights were applied to ensure estimates represent the target population.
+
+        Key features:
+                - Each respondent represents multiple individuals in the population.
+
+                - Adjustments made for:
+                        - Sampling design
+                        - Rejective sampling of non-volunteers
+                        - Non-response
+
+                - Weights calibrated to match external income distributions by province.
+
+        Main weight:
+                WGHT_PER: Person-level analysis weight
+
+        Variance estimation:
+                Bootstrap weights provided for design-based variance estimation.
+
+
+9. Data processing
+
+        Data collection:
+                - Conducted via electronic questionnaire or CATI.
+                - Average completion time: approximately 44 minutes.
+                - Interviews available in English and French.
+                - No proxy responses allowed.
+
+        Administrative linkage:
+                - Survey responses were linked to personal tax records (T1, T1FF, T4) when consent was provided.
+                - Linkage used to improve accuracy of income data.
+
+
+10. Cleaning, imputation, etc
+
+        Error detection
+                - Processing used Statistics Canada’s Social Survey Processing Environment (SSPE).
+                - Automated and manual edits applied at micro and macro levels.
+                - Types of edits included:
+                        - Range checks
+                        - Consistency checks
+                        - Flow edits
+                        - Family relationship checks
+        
+        CATI system included built-in validation during interviews.
+
+        Imputation
+                - Primarily donor imputation using a score-based nearest-neighbour method.
+                - If no suitable donor was available, mean imputation was used.
+        Imputation steps included:
+                - Personal and family income
+                - Formal volunteering variables
+                - Informal volunteering variables
+                - Donation and solicitation variables
+
+        Income handling:
+                - Personal income obtained from 2017 tax data for 81.9% of respondents.
+                - Family income obtained for 81.7% of households.
+                - Missing values were imputed.
+
+
+
+
+11. Sources of error
+        The methodology of this survey has been designed to limit the number of errors and to reduce their potential effects. However, the results of the survey remain subject to both sampling and non-sampling error.
+
+        Sampling error
+                - Estimates are subject to variability due to sampling.
+                - Sampling variability estimated using bootstrap methods.
+
+        Non-sampling error
+                - Main sources include
+                - Coverage error
+                - Non-response
+                - Response error
+                - Processing error
+
+        Coverage limitations:
+                - Households without telephones were excluded from the sampling frame.
+                - Weighting adjustments used to reduce bias.
+
+
+
+
+12. Limitations, known biases, etc
+
+        Non-response bias is a key limitation.
+
+        Mitigation methods:
+                - Weight adjustments for non-response.
+                - Use of administrative data (e.g., income, household composition) to model and adjust for non-responding households.
+
+
+13. Link to documentation and any additional sources used
+Statistics Canada survey page:
+         https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=796234
+Survey analytical report:
+        https://www150.statcan.gc.ca/n1/pub/89f0115x/89f0115x2019001-eng.htm
+
+
 write your answer here
 ```
 
